@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu Trường THPT Xuân Giang</title>
+
+    <style>
+        /* Tối ưu cuộn trang mượt mà */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            background: linear-gradient(to right, #e3f2fd, #f2f4f8);
+            color: #333;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background: linear-gradient(135deg, #0077cc, #0099ff);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 15px;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.2));
+        }
+
+        /* ===== NAVIGATION ===== */
+        nav {
+            background-color: #005fa3;
+            text-align: center;
+            padding: 12px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: #005fa3;
+        }
+
+        /* ===== CONTAINER & SECTIONS ===== */
+        .container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .section {
+            background-color: white;
+            margin-bottom: 40px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            color: #0077cc;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        h2::after {
+            content: "";
+            width: 60px;
+            height: 4px;
+            background-color: #ffcc00; /* Đổi màu nhấn cho nổi bật */
+            display: block;
+            margin: 10px auto;
+            border-radius: 2px;
+        }
+
+        /* ===== IMAGES ===== */
+        .section img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 15px 0;
+            transition: 0.3s;
+        }
+
+        .khung-anh {
+            max-width: 500px;
+            margin: 0 auto 20px;
+            border: 5px solid #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        /* ===== LISTS ===== */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #f9fbff;
+            padding: 20px;
+            border-left: 5px solid #0077cc;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
+
+        li:hover {
+            transform: scale(1.02);
+            background-color: #f0f7ff;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Logo Trường THPT Xuân Giang">
+    <h1>TRƯỜNG THPT XUÂN GIANG</h1>
+    <p>Nơi chắp cánh ước mơ cho học sinh</p>
+</header>
+
+<nav>
+    <a href="#gioithieu">Giới thiệu</a>
+    <a href="#coso">Cơ sở vật chất</a>
+    <a href="#hoatdong">Hoạt động</a>
+</nav>
+
+<div class="container">
+
+    <section class="section" id="gioithieu">
+        <h2>Giới thiệu chung</h2>
+        <div class="khung-anh">
+            <img src="anh-truong.jpg" alt="Toàn cảnh trường Xuân Giang">
+        </div>
+        <p><strong>Địa chỉ:</strong> Khu Thá - Xã Đa Phúc - Sóc Sơn - Hà Nội</p>
+        <p><strong>Thành lập:</strong> Năm 2006</p>
+        <p>Trường THPT Xuân Giang là môi trường học tập hiện đại, thân thiện và năng động, chú trọng phát triển toàn diện kiến thức, đạo đức và kỹ năng sống cho học sinh.</p>
+    </section>
+
+    <section class="section" id="coso">
+        <h2>Cơ sở vật chất</h2>
+        <p>Hệ thống phòng học khang trang, trang bị đầy đủ thiết bị dạy học hiện đại.</p>
+        <img src="san-truong.jpg" alt="Khuôn viên sân trường">
+        <img src="lop-hoc.jpg" alt="Phòng học hiện đại">
+    </section>
+
+    <section class="section" id="hoatdong">
+        <h2>Hoạt động nổi bật</h2>
+        <ul>
+            <li>
+                <strong>🎨 Văn nghệ:</strong> Cuộc thi chào mừng ngày Nhà giáo Việt Nam 20/11.
+            </li>
+            <li>
+                <strong>⚽ Thể thao:</strong> Giải bóng đá học sinh thường niên.
+            </li>
+            <li>
+                <strong>🤝 Thiện nguyện:</strong> Các chương trình ngoại khóa giúp đỡ cộng đồng.
+            </li>
+        </ul>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Trường THPT Xuân Giang - Đoàn kết - Sáng tạo - Thành công</p>
+</footer>
+
+</body>
+</html>
